@@ -1,0 +1,39 @@
+<htlm>
+    <head>
+        <script>
+            function Savedata(){
+                var mydata = {
+                    name:"Akshat",
+                    gender:"Male"
+                }
+                var userdata = JSON.stringify(mydata)
+                localStorage.setItem("name", "Akshat");
+                localStorage.setItem("userdata",userdata);
+                document.getElementById("myid").innerHTML = "DataSaved";
+                }
+            function Getdata(){
+                if(localStorage.getItem("name")){
+                    var a = localStorage.getItem("name");
+                    var b = localStorage.getItem("userdata");
+                    c = JSON.parse(b);
+                    document.getElementById("myid").innerHTML = c.name + c.gender;
+                }
+                else{
+                    console.log("No Data");
+                    document.getElementById("myid").innerHTML = "No Data";
+                }
+            }
+            function Removeata(){
+                localStorage.clear();
+                console.log("Data has been removed")
+                document.getElementById("myid").innerHTML = "Removed";
+            }
+        </script>
+    </head>
+    <body>
+        <div id = "myid"></div>
+        <input type = "button" onclick = Savedata() value = "Save"/>
+        <input type = "button" onclick = Getdata() value = "Get"/>
+        <input type = "button" onclick = Removedata() value = "Remove"/>
+    </body>
+</htlm>

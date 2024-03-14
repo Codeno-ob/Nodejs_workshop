@@ -1,0 +1,15 @@
+node -v:
+gives version info
+
+npm -v:
+gives npm version info
+
+npx -v:
+gives npx version info
+
+npm i(install) npm -g:
+to upgrade npm version
+
+cls:
+clear screen
+

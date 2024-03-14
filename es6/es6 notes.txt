@@ -1,0 +1,21 @@
+use `(backtick) instead of '(apostrophe)
+
+lamda function in python is arrow function in nodejs
+
+object in nodejs is kinda like dict in py, 
+ex- var userdata = {
+			name:''
+			gender:''
+			mobile:''
+		   }
+
+to convert object to string use JSON.stringify and viceversa use JSON.parse
+
+**es6(latest js version)**
+
+Let-variable is different for in between each bracket
+Var- variable
+const-create a new unchangable var
+
+`...`- spread operator- to call a variable value in another variable
+rest parameter - if spread operator used in function argument then called rest parameter
